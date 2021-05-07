@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
+    "start": "NODE_ENV=development webpack serve --open",
     "build": "webpack"
   },
   "repository": {
@@ -27,9 +27,11 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "css-loader": "^5.2.0",
+    "dotenv-webpack": "^7.0.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.0",
     "source-map-loader": "^2.0.1",
+    "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.3",
     "webpack": "^5.30.0",
